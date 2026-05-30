@@ -1,0 +1,135 @@
+/* =========================
+   GLOBAL STYLES
+========================= */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* =========================
+   APP CONTAINER
+========================= */
+
+.app {
+  width: 95%;
+  margin: 40px auto;
+  text-align: center;
+}
+
+/* =========================
+   TITLE
+========================= */
+
+h1 {
+  margin-bottom: 30px;
+  font-size: 36px;
+  font-weight: 700;
+  color: #222;
+}
+
+/* =========================
+   TABLE
+========================= */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+}
+
+/* Table Header */
+
+thead {
+  background-color: #009879;
+  color: white;
+}
+
+th {
+  padding: 14px;
+  text-align: left;
+  font-weight: 600;
+}
+
+/* Table Body */
+
+td {
+  padding: 14px;
+  text-align: left;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Green border at bottom */
+
+tbody {
+  border-bottom: 2px solid #009879;
+}
+
+/* Alternate row colors */
+
+tbody tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+/* Row hover effect */
+
+tbody tr:hover {
+  background-color: #f3f3f3;
+}
+
+/* =========================
+   PAGINATION
+========================= */
+
+.pagination {
+  margin-top: 35px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  gap: 14px;
+}
+
+/* Previous & Next Buttons */
+
+.pagination button {
+  border: none;
+  background-color: #009879;
+  color: white;
+
+  padding: 8px 16px;
+
+  border-radius: 4px;
+
+  cursor: pointer;
+
+  font-size: 14px;
+}
+
+/* Disabled Button */
+
+.pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Current Page Number */
+
+.page-number {
+  background-color: #009879;
+  color: white;
+
+  min-width: 36px;
+
+  padding: 8px 12px;
+
+  border-radius: 4px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-weight: bold;
+}
